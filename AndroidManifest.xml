@@ -13,6 +13,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+	<activity android:name=".HelloGridView" />
+	<activity android:name=".RelativeLayoutActivity" />
 	<activity android:name=".LinearLayoutActivity" />
 	<activity android:name=".HelloAndroid" />
 	<activity android:name=".AlbumsActivity" />

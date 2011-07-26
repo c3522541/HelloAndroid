@@ -21,15 +21,30 @@ public final class R {
         public static final int ic_tab_artists_grey=0x7f020004;
         public static final int ic_tab_artists_white=0x7f020005;
         public static final int icon=0x7f020006;
+        public static final int sample_0=0x7f020007;
+        public static final int sample_1=0x7f020008;
+        public static final int sample_2=0x7f020009;
+        public static final int sample_3=0x7f02000a;
+        public static final int sample_4=0x7f02000b;
+        public static final int sample_5=0x7f02000c;
+        public static final int sample_6=0x7f02000d;
+        public static final int sample_7=0x7f02000e;
     }
     public static final class id {
-        public static final int linearLayout1=0x7f060000;
-        public static final int linearLayout2=0x7f060001;
+        public static final int entry=0x7f060005;
+        public static final int gridview=0x7f060000;
+        public static final int label=0x7f060004;
+        public static final int linearLayout1=0x7f060001;
+        public static final int linearLayout2=0x7f060002;
+        public static final int ok=0x7f060006;
+        public static final int relativeLayout1=0x7f060003;
     }
     public static final class layout {
-        public static final int linear_layout=0x7f030000;
-        public static final int list_item=0x7f030001;
-        public static final int tabview_layout=0x7f030002;
+        public static final int gridview_layout=0x7f030000;
+        public static final int linear_layout=0x7f030001;
+        public static final int list_item=0x7f030002;
+        public static final int relative_layout=0x7f030003;
+        public static final int tabview_layout=0x7f030004;
     }
     public static final class string {
         public static final int app_name=0x7f040001;

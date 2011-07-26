@@ -83,7 +83,16 @@ public class HelloListView extends ListActivity {
 					Intent intent = new Intent().setClass(getApplicationContext(), LinearLayoutActivity.class);
 					startActivity(intent);
 				}
-				
+				else if(position == 2)
+				{
+					Intent intent = new Intent().setClass(getApplicationContext(), RelativeLayoutActivity.class);
+					startActivity(intent);
+				}
+				else if(position == 4)
+				{
+					Intent intent = new Intent().setClass(getApplicationContext(), HelloGridView.class);
+					startActivity(intent);
+				}
 			}
 			
 		});
