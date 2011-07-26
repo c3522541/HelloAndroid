@@ -1,6 +1,7 @@
 package com.example.helloandroid;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -60,7 +61,8 @@ public class HelloListView extends ListActivity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		
-		setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, COUNTRIES));
+		String[] countries = getResources().getStringArray(R.array.countries_array);
+		setListAdapter(new ArrayAdapter<String>(this, R.layout.list_item, countries));
 		
 		ListView lv = getListView();
 		lv.setTextFilterEnabled(true);
@@ -70,7 +72,18 @@ public class HelloListView extends ListActivity {
 			public void onItemClick(AdapterView<?> parent, View view,
 			        int position, long id) {
 			      // When clicked, show a toast with the TextView text
-				Toast.makeText(getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
+//				Toast.makeText(getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
+				if(position == 0)
+				{
+					Intent intent = new Intent().setClass(getApplicationContext(), HelloAndroid.class);
+					startActivity(intent);
+				}
+				else if(position == 1)
+				{
+					Intent intent = new Intent().setClass(getApplicationContext(), LinearLayoutActivity.class);
+					startActivity(intent);
+				}
+				
 			}
 			
 		});

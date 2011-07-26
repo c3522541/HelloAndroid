@@ -2,4 +2,11 @@
 <resources>
     <string name="hello">Hello World, HelloAndroid! This is Sean Che.</string>
     <string name="app_name">Hello, Android</string>
+    <string-array name="countries_array">
+        <item>Tab Layout</item>
+        <item>Linear Layout</item>
+        <item>Relative Layout</item>
+        <item>Table Layout</item>
+        <item>Grid View</item>
+    </string-array>
 </resources>
