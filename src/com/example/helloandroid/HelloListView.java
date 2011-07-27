@@ -1,8 +1,18 @@
 package com.example.helloandroid;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.example.helloandroid.utilities.Utils;
+
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
@@ -55,6 +65,8 @@ public class HelloListView extends ListActivity {
 		    "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Wallis and Futuna", "Western Sahara",
 		    "Yemen", "Yugoslavia", "Zambia", "Zimbabwe"
 		  };
+	static final String URL_CREATE_A_USER = "http://sandbox.playwithplastic.com/appreleases/tests/createauser.json";
+	static final String URL_GET_A_USERS_INFO = "http://sandbox.playwithplastic.com/appreleases/tests/getausersinformation.json";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +86,7 @@ public class HelloListView extends ListActivity {
 			      // When clicked, show a toast with the TextView text
 //				Toast.makeText(getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
 				if(position == 0)
-				{
+				{					
 					Intent intent = new Intent().setClass(getApplicationContext(), HelloAndroid.class);
 					startActivity(intent);
 				}
@@ -87,6 +99,11 @@ public class HelloListView extends ListActivity {
 				{
 					Intent intent = new Intent().setClass(getApplicationContext(), RelativeLayoutActivity.class);
 					startActivity(intent);
+				}
+				else if (position == 3)
+				{
+					JSONTest.getUserInfo(URL_CREATE_A_USER);
+					JSONTest.getUserInfoFromTeamBuy(URL_GET_A_USERS_INFO);
 				}
 				else if(position == 4)
 				{
