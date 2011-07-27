@@ -65,8 +65,6 @@ public class HelloListView extends ListActivity {
 		    "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Wallis and Futuna", "Western Sahara",
 		    "Yemen", "Yugoslavia", "Zambia", "Zimbabwe"
 		  };
-	static final String URL_CREATE_A_USER = "http://sandbox.playwithplastic.com/appreleases/tests/createauser.json";
-	static final String URL_GET_A_USERS_INFO = "http://sandbox.playwithplastic.com/appreleases/tests/getausersinformation.json";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -102,8 +100,9 @@ public class HelloListView extends ListActivity {
 				}
 				else if (position == 3)
 				{
-					JSONTest.getUserInfo(URL_CREATE_A_USER);
-					JSONTest.getUserInfoFromTeamBuy(URL_GET_A_USERS_INFO);
+//					JSONTest.getUserInfo(JSONTest.URL_CREATE_A_USER);
+//					JSONTest.getUserInfoFromTeamBuy(JSONTest.URL_GET_A_USERS_INFO);
+					JSONTest.getDealInfo(JSONTest.URL_GET_A_DEALS_INFO);
 				}
 				else if(position == 4)
 				{
