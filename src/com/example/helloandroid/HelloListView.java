@@ -66,9 +66,14 @@ public class HelloListView extends ListActivity {
 					Intent intent = new Intent().setClass(getApplicationContext(), HelloGridView.class);
 					startActivity(intent);
 				}
-				else if(position ==5)
+				else if(position == 5)
 				{
 					Intent intent = new Intent().setClass(getApplicationContext(), FBLoginActivity.class);
+					startActivity(intent);
+				}
+				else if(position == 6)
+				{
+					Intent intent  = new Intent().setClass(getApplicationContext(), QRCodeActivity.class);
 					startActivity(intent);
 				}
 			}

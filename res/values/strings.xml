@@ -9,5 +9,6 @@
         <item>JSON Test</item>
         <item>Grid View</item>
         <item>Facebook Login</item>
+        <item>QR Code Reader</item>
     </string-array>
 </resources>
