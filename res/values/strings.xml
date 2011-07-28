@@ -6,7 +6,8 @@
         <item>Tab Layout</item>
         <item>Linear Layout</item>
         <item>Relative Layout</item>
-        <item>Table Layout</item>
+        <item>JSON Test</item>
         <item>Grid View</item>
+        <item>Facebook Login</item>
     </string-array>
 </resources>
