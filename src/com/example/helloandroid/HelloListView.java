@@ -73,7 +73,12 @@ public class HelloListView extends ListActivity {
 				}
 				else if(position == 6)
 				{
-					Intent intent  = new Intent().setClass(getApplicationContext(), QRCodeActivity.class);
+					Intent intent = new Intent().setClass(getApplicationContext(), QRCodeActivity.class);
+					startActivity(intent);
+				}
+				else if(position == 7)
+				{
+					Intent intent = new Intent().setClass(getApplicationContext(), ImageViewActivity.class);
 					startActivity(intent);
 				}
 			}

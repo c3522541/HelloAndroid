@@ -10,5 +10,6 @@
         <item>Grid View</item>
         <item>Facebook Login</item>
         <item>QR Code Reader</item>
+        <item>Caching Images</item>
     </string-array>
 </resources>
